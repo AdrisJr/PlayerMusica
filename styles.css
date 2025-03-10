@@ -1,0 +1,113 @@
+body{
+    background-color: lightsteelblue;
+    transition: background-color 0.5s;
+}
+
+.player{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.detalhes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.musicaArte{
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    border-radius: 15%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://img.icons8.com/?size=200&id=10E88keINTLW&format=png&color=000000");
+}
+.tocando{
+    font-size: 1rem;
+}
+.musicaNome{
+    font-size: 3rem;
+}
+.musicaArtista{
+    font-size: 1.5rem;
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.pauseMusica, 
+.anteriorMusica, 
+.proximaMusica{
+    padding: 25px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.pauseMusica:hover, 
+.anteriorMusica:hover, 
+.proximaMusica:hover{
+    opacity: 1.0;
+}
+.slider{  
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #000;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+ 
+.seek_slider {
+  width: 100%;
+}
+ 
+.volume_slider {
+  width: 40%;
+}
+
+.current-time,
+.total-duration {
+  padding: 10px;
+}
+ 
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+ 
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
