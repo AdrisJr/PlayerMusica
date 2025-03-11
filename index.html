@@ -19,13 +19,13 @@
         </div>
 
         <div class="botoes">
-            <div class="anteriorMusica">
+            <div class="anteriorMusica" onclick="prevTrack()">
                 <i class="fa fa-step-backward fa-2x"></i>
             </div>
-            <div class="pauseMusica">
+            <div class="pauseMusica" onclick="playpauseTrack()">
                 <i class="fa fa-play-circle fa-5x"></i>
             </div>
-            <div class="proximaMusica">
+            <div class="proximaMusica" onclick="nextTrack()">
                 <i class="fa fa-step-forward fa-2x"></i>
             </div>
         </div>
@@ -40,6 +40,10 @@
             <i class="fa fa-volume-down"></i>
             <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
             <i class="fa fa-volume-up"></i>
+            <i class="fa fa-file-alt fa-2x"></i>
+            
+            
+            
         </div>
     </div>
     <script src="main.js"></script> 

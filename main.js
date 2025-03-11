@@ -1,7 +1,7 @@
-let now_playing = document.querySelector("tocando");
+let now_playing = document.querySelector(".tocando");
 let track_art = document.querySelector(".musicaArte");
 let track_name = document.querySelector(".musicaNome");
-let track_artist = document.querySelector(".muscicaArtista");
+let track_artist = document.querySelector(".musicaArtista");
  
 let playpause_btn = document.querySelector(".pauseMusica");
 let next_btn = document.querySelector(".proximaMusica");
@@ -19,10 +19,10 @@ let updateTimer;
 let curr_track = document.createElement('audio');
 let track_list = [
   {
-    name: "Night Owl",
-    artist: "Broke For Free",
-    image: "Image URL",
-    path: "Night_Owl.mp3"
+    name: "The Beatles",
+    artist: "Dont Let Me Down",
+    image: "resources/imagem/beatles.jpeg",
+    path: "resources/musica/music-1.mp3"
   },
   {
     name: "Enthusiast",

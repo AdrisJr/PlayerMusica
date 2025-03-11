@@ -63,11 +63,12 @@ body{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    height: 5px;
+    height: 10px;
     background: #000;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    border-radius: 15px;
   }
 
 .seek_slider::-webkit-slider-thumb,
@@ -104,10 +105,26 @@ i.fa-volume-down,
 i.fa-volume-up {
   padding: 10px;
 }
- 
+    
 i.fa-play-circle,
 i.fa-pause-circle,
 i.fa-step-forward,
 i.fa-step-backward {
   cursor: pointer;
+}
+
+.lyrics-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lyrics-btn:hover {
+    background-color: #444;
 }
