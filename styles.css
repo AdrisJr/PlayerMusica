@@ -2,12 +2,12 @@ body{
     background-color: lightsteelblue;
     transition: background-color 0.5s;
 }
-
 .player{
     height: 95vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
 }
 .detalhes{
@@ -22,6 +22,7 @@ body{
     height: 250px;
     width: 250px;
     border-radius: 15%;
+    border: 3px solid #fff;
     background-size: cover;
     background-position: center;
     background-image: url("https://img.icons8.com/?size=200&id=10E88keINTLW&format=png&color=000000");
@@ -29,11 +30,15 @@ body{
 .tocando{
     font-size: 1rem;
 }
-.musicaNome{
-    font-size: 3rem;
+.musicaNome {
+  font-weight: 600; 
+  font-size: 22px;
 }
-.musicaArtista{
-    font-size: 1.5rem;
+
+.musicaArtista {
+  font-weight: 300; 
+  font-size: 18px;
+  opacity: 0.8;
 }
 .botoes{
     display: flex;
@@ -113,18 +118,3 @@ i.fa-step-backward {
   cursor: pointer;
 }
 
-.lyrics-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 15px;
-    background-color: #222;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.lyrics-btn:hover {
-    background-color: #444;
-}
